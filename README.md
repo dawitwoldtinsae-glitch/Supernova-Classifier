@@ -35,7 +35,6 @@ The final modeling dataset contains:
 
 Objects with only a single light-curve observation were removed because several statistical variability features cannot be meaningfully calculated from a single observation.
 
-The raw dataset is not included in the repository. Only the final cleaned dataset used for modeling is included.
 
 ### Final Dataset
 
