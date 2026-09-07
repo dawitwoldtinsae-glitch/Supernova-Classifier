@@ -185,7 +185,7 @@ The relationships between the final predictive features were examined using a co
 
 The heatmap provides a visual representation of the pairwise correlations between the numerical features used in the final modeling dataset. It helps identify strongly related variables, potential redundancy between features, and groups of features that may contain similar information.
 
-![Feature Relationship Heatmap](results/feature_heatmap.png)
+![Feature Heatmap](./results/feature_heatmap.png)
 
 Some features were removed because they were redundant, weakly informative, or unlikely to contribute useful predictive information.
 
