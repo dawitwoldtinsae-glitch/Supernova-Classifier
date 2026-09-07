@@ -567,6 +567,3 @@ The results provide a solid baseline for future versions of the project, particu
 
 ---
 
-# Author
-
-Developed as a machine learning project to study the application of supervised classification to astronomical transient data.
