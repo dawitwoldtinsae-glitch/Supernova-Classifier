@@ -179,13 +179,6 @@ The engineered features include:
 - Magnitude baseline
 
 Feature analysis was then used to determine which variables were useful enough to retain.
-### Feature Relationship Heatmap
-
-The relationships between the final predictive features were examined using a correlation heatmap.
-
-The heatmap provides a visual representation of the pairwise correlations between the numerical features used in the final modeling dataset. It helps identify strongly related variables, potential redundancy between features, and groups of features that may contain similar information.
-
-![Feature Heatmap](./results/feature_heatmap.png)
 
 Some features were removed because they were redundant, weakly informative, or unlikely to contribute useful predictive information.
 
