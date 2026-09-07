@@ -74,15 +74,26 @@ The original classification column was removed before modeling to prevent **targ
 Supernova-Classifier/
 │
 ├── data/
-│   └── merge_all.csv
+│   ├── X_test.csv
+│   ├── X_train.csv
+│   ├── merge_all.csv
+│   ├── structured_info.csv
+│   ├── structured_labels.csv
+│   ├── structured_light_curve.csv
+│   ├── transient_info.csv
+│   ├── transient_info.txt
+│   ├── transient_labels.csv
+│   ├── transient_lightcurves.csv
+│   ├── y_test.csv
+│   └── y_train.csv
 │
 ├── notebooks/
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_data_cleaning.ipynb
-│   ├── 03_feature_engineering.ipynb
-│   ├── 04_baseline_models.ipynb
-│   ├── 05_hyperparameter_tuning.ipynb
-│   └── 06_final_model_comparison.ipynb
+│   ├── 01_data_understanding.ipynb
+│   ├── 02_exploratory_data_analysis.ipynb
+│   ├── 03_preprocessing & data Preparation.ipynb
+│   ├── 04_baseline_machine Learning.ipynb
+│   ├── 05_hyperparameter tuning & model Evaluation.ipynb
+│   └── 06_final model comparison & Ensemble Learning.ipynb
 │
 ├── src/
 │   ├── model.py
@@ -103,7 +114,7 @@ The project is divided into six main notebooks.
 
 ## 01 — Data Exploration
 
-`notebooks/01_data_exploration.ipynb`
+`notebooks/01_data_understanding.ipynb`
 
 The first notebook investigates the original astronomical data and establishes an understanding of its structure.
 
@@ -127,7 +138,7 @@ The purpose of this notebook is to understand the data before making cleaning or
 
 ## 02 — Data Cleaning
 
-`notebooks/02_data_cleaning.ipynb`
+`notebooks/02_exploratory_data_analysis.ipynb`
 
 This notebook prepares the astronomical data for feature engineering and modeling.
 
@@ -151,7 +162,7 @@ The resulting dataset contains **3,734 objects with no missing values**.
 
 ## 03 — Feature Engineering
 
-`notebooks/03_feature_engineering.ipynb`
+`notebooks/03_preprocessing & data Preparation.ipynb`
 
 This notebook converts the cleaned astronomical observations into object-level machine learning features.
 
@@ -177,7 +188,7 @@ The final feature set was then prepared for machine learning.
 
 ## 04 — Baseline Models
 
-`notebooks/04_baseline_models.ipynb`
+`notebooks/04_baseline_machine Learning.ipynb`
 
 This notebook establishes the initial performance of several machine learning algorithms before hyperparameter tuning.
 
@@ -210,7 +221,7 @@ The baseline experiments showed that **Random Forest performed substantially bet
 
 ## 05 — Hyperparameter Tuning
 
-`notebooks/05_hyperparameter_tuning.ipynb`
+`notebooks/05_hyperparameter tuning & model Evaluation.ipynb`
 
 This notebook investigates whether model performance can be improved through hyperparameter optimization.
 
@@ -251,7 +262,7 @@ Repeated stratified cross-validation was used to reduce dependence on a single d
 
 ## 06 — Final Model Comparison
 
-`notebooks/06_final_model_comparison.ipynb`
+`notebooks/06_final model comparison & Ensemble Learning.ipynb`
 
 The final notebook compares the strongest candidate models and performs the final model-selection analysis.
 
